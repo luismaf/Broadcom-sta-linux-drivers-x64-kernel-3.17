@@ -1,4 +1,10 @@
-patched-broadcom-wl-broadcom-sta-
+patched-broadcom-wl-broadcom-sta
 =================================
 
-broadcom-sta drivers already patched for kernel 3.14.3 (just enable CFG80211 as module, and disable kernel debug in kernel hackiing)
+broadcom-sta drivers already patched for kernel 3.14.3.
+
+Just enable CFG80211 as module, and disable kernel debugging (in kernel hacking) before compiling the kernel.
+
+Also includes the complied module.
+
+I've use Krejzi (great) patches form https://aur.archlinux.org/packages/broadcom-wl/
