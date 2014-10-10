@@ -1307,7 +1307,12 @@ wl_alloc_linux_if(wl_if_t *wlif)
 	dev->priv = priv_link;
 #else
 
+#if (LINUX_VERSION_CODE < KERNEL_VERSION(3, 17, 0))
 	dev = alloc_netdev(sizeof(priv_link_t), intf_name, ether_setup);
+#else
+	dev = alloc_netdev(sizeof(priv_link_t), intf_name, NET_NAME_UNKNOWN,
+			   ether_setup);
+#endif
 	if (!dev) {
 		WL_ERROR(("wl%d: %s: alloc_netdev failed\n",
 			(wl->pub)?wl->pub->unit:wlif->subunit, __FUNCTION__));
