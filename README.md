@@ -7,4 +7,4 @@ Just enable CFG80211 as module, and disable kernel debugging (in kernel hacking)
 
 Also includes the complied module.
 
-I've use Krejzi (great) patches form https://aur.archlinux.org/packages/broadcom-wl/
+I've used Krejzi (great) patches form https://aur.archlinux.org/packages/broadcom-wl/
