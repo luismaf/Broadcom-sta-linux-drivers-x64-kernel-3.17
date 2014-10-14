@@ -14,11 +14,11 @@ Check to see if ssb, bcma, wl or b43 is loaded:
 # lsmod | grep "brcmsmac\|ssb\|wl\|b43\|bcma"
 
 If any of these are installed, remove them:
-# rmmod brcmsmac
-# rmmod ssb
-# rmmod bcma
-# rmmod wl
-# insmod wl
+rmmod brcmsmac
+rmmod ssb
+rmmod bcma
+rmmod wl
+insmod wl
 
 Then run:
 make
